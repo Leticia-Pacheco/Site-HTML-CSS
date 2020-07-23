@@ -1,0 +1,681 @@
+@font-face{
+    font-family: waltograph;
+    src: url(../fonte/waltographUI.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Times new roman";
+}
+
+/* CLASSES GLOBAIS DO SITE */
+
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link,  a:visited, a:active{
+    color: #f54295;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+} 
+
+h1, h2{
+    font-family: waltograph;
+    font-size: 22px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    background-color: #ff8cc6;
+    
+    text-align: center;
+}
+
+h3{
+    font-family: "Times new roman";
+    font-size: 28px;
+    
+    line-height: 1;
+    
+    color: white;
+    
+    text-align: center;
+    
+    background-color: #ff8cc6;
+    
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+.texto{
+    font-family: "Times new roman";
+    font-size: 21px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 3px;
+    
+    line-height: 1.5;
+    
+    text-align: justify;
+}
+
+.texto::selection{
+    background-color: #f54295;
+    color: white;
+}
+
+/*FINAL - CLASSES GLOBAIS DO SITE*/
+
+.conteudo{
+    width: 1366px; 
+    height: inherit;
+}
+
+#baseConteudos{
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-top: 124px;
+    
+    padding-top: 10px;
+    
+    border-bottom: solid 2px #ffbfdf;
+    
+    background-color: #f7fcff;
+    
+    float: left;
+}
+
+header{
+    width: 100%;
+    height: 144px;
+    
+    background-color: #f7fcff;
+    
+    box-shadow: 10px 1px 40px deeppink;
+    
+    margin-top: -20px;
+    
+    position: fixed;
+}
+
+#logo{
+    width: 200px;
+    height: 160px;
+    
+    margin-right: 10px;
+    
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 122px;
+    
+    margin-top: 20px;
+    
+    float: left;
+}
+
+#logoNome{
+    width: 270px;
+    height: 140px;
+    
+    padding-top: 50px;
+    padding-left: 20px;
+    
+    box-shadow: 15px 0px 20px #c7e9ff;
+    
+    float: left;
+}
+
+#logoNome img{
+    width: 200px;
+    height: 100px;
+    
+    float: left;
+}
+
+#menuContainer{
+    width: 670px;
+    height: 60px;
+    
+    float: right;
+}
+
+#menu{
+    width: 850px;
+    height: 140px; 
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    
+    float: right;
+}
+
+.menuItens{
+    width: 130px;
+    height: 120px;
+    
+    margin-right: 35px;
+    
+    border-radius: 100px 100px 100px 100px;
+    
+    text-align: center;
+    font-weight: bold;
+    
+    font-family: verdana;
+    font-size: 16px;
+    
+    letter-spacing: 3px;
+    
+    color: #ffffff;
+    
+    list-style: none;
+    list-style-position: inside;
+    
+    float: left;
+}
+
+.menuItens:hover{
+    cursor: pointer;
+    background-color: #fac3d4;
+    transition: 0.6s;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.tituloMenu, .tituloMenuLiveAction{
+    width: 130px;
+    height: 120px;
+    
+    padding-top: 40px;
+    
+    border: solid 2px #ff8cc6;
+    border-radius: 120px 120px 120px 120px;
+    
+    background-color: RGBA(255, 255, 255, 0.63);
+}
+
+.tituloMenuLiveAction{
+    padding-top: 30px;
+}
+
+.tituloMenu:hover{
+    cursor: pointer;
+    background-color: #fac3d4;
+    transition: 0.6s;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.tituloMenuLiveAction:hover{
+    cursor: pointer;
+    background-color: #fac3d4;
+    transition: 0.6s;
+    border-radius: 30px 30px 30px 30px;
+}
+
+/*INÍCIO MENUS*/
+#classicos{
+    width: inherit;
+    min-height: 48px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+#menuClassicos{
+    background-image: url(../imagensMenus/classicos.jpg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#recentes{
+    width: inherit;
+    min-height: 48px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+#menuRecentes{
+    background-image: url(../imagensMenus/recentes.jpg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#princesas{
+    width: inherit;
+    min-height: 48px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+#menuPrincesas{
+    background-image: url(../imagensMenus/princesas.jpeg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#liveAction{
+    width: inherit;
+    min-height: 48px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+#menuLiveAction{
+    background-image: url(../imagensMenus/liveaction.jpg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#esquecidos{
+    width: inherit;
+    min-height: 48px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+#menuEsquecidos{
+    background-image: url(../imagensMenus/esquecidos.jpg);
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*FINAL DE MENUS*/
+
+.sobreResponsivo{
+    width: 1366px;
+    min-height: 200px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.sobreTexto{
+    width: 890px;
+    min-height: 320px;
+    height: auto;
+    overflow: hidden;
+    
+    border-bottom: solid 3px #ff8cc6;
+    border-right: solid 3px #ff8cc6;
+    
+    margin-right: 60px;
+    
+    float: right;
+}
+
+#castelo{
+    width: 360px;
+    height: 482px;
+    
+    margin-left: 25px;
+    margin-right: 30px;
+    
+    float: left;
+}
+
+#castelo img{
+    width: 390px;
+    height: 501px;
+    
+    border-bottom: solid 2px #ff8cc6;
+    border-left: solid 2px #ff8cc6;
+    border-top: solid 2px #ff8cc6;
+}
+
+.capaFilmes{
+    width: 230px;
+    height: 320px;
+    
+    margin-left: 60px;
+    
+    border: solid 3px #ff8cc6;
+    
+    float: left;
+}
+
+.capaFilmes img{
+    width: 230px;
+    min-height: 316px;
+    height: auto;
+    overflow: hidden;
+    
+    float: left;
+}
+
+.conteudoVertical{
+    width: 280px;
+    min-height: 780px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-left: 30px;
+    margin-right: 22px;
+    
+    float: left;
+}
+
+.sobreTextoRecentes{
+    width: 280px;
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+    
+    background-color: #b5e4ff;
+    
+    float: left;
+}
+
+.capaFilmesRecentes{
+    width: 250px;
+    height: 320px;
+    
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+    background-color: aqua;
+    
+    float: left;
+}
+
+.capaFilmesRecentes img{
+    width: 250px;
+    height: 320px;
+    
+    float: left;
+}
+
+.conteudoFilmesPrincesas{
+    width: 420px;
+    height: 550px;
+    
+    margin-left: 180px;
+    
+    background-color: darkturquoise;
+    
+    float: left;
+}
+
+#imagemCinderela, #imagemBrancaDeNeve, #imagemBelaAdormecida, #imagemPequenaSereia, #imagemBelaEaFera, #imagemAladdin, #imagemPocahontas, #imagemPrincesaEoSapo, #imagemMulan, #imagemEnrolados, #imagemValente, #imagemMoana{
+    width: 420px;
+    height: 521px;
+    
+    border: solid 3px #ff8cc6;
+    border-bottom: solid 7px #ff8cc6;
+    
+    float: left;
+}
+
+#imagemCinderela{
+    background-image: url(../imagens/cinderela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemBrancaDeNeve{
+    background-image: url(../imagens/brancaDeNeve.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemBelaAdormecida{
+    background-image: url(../imagens/belaAdormecida.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemPequenaSereia{
+    background-image: url(../imagens/aPequenaSereia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemBelaEaFera{
+    background-image: url(../imagens/belaEaFera.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemAladdin{
+    background-image: url(../imagens/aladdin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemPocahontas{
+    background-image: url(../imagens/pocahontas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemPrincesaEoSapo{
+    background-image: url(../imagens/princesaEoSapo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemMulan{
+    background-image: url(../imagens/mulan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemEnrolados{
+    background-image: url(../imagens/enrolados.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemValente{
+    background-image: url(../imagens/valente.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemMoana{
+    background-image: url(../imagens/moana.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#imagemCinderela img, #imagemBrancaDeNeve img, #imagemBelaAdormecida img, #imagemPequenaSereia img, #imagemBelaEaFera img, #imagemAladdin img, #imagemPocahontas img, #imagemPrincesaEoSapo img, #imagemMulan img, #imagemEnrolados img, #imagemValente img, #imagemMoana img, #imagemFrozen img{
+    width: 420px;
+    height: 521px;
+
+    float: left;
+}
+
+.textoPrincesas{
+    width: 370px;
+    height: 470px;
+    
+    margin-top: 20px;
+    
+    background-color: RGBA(255, 255, 255, 0.7);
+}
+
+.conteudoLiveAction{
+    width: 1030px;
+    height: 400px;
+    
+    margin-left: 170px;
+    
+    border: solid 3px #ff8cc6;
+    
+    float: left;
+}
+
+.imagemLiveAction{
+    width: 270px;
+    height: 330px;
+    
+    margin-top: 29px;
+    margin-right: 64px;
+    
+    float: left;
+}
+
+.imagemLiveAction img{
+    width: 280px;
+    height: 333px;
+    
+    float: left;
+}
+
+.textoLiveAction{
+    width: 690px;
+    height: 332px;
+    
+    margin-top: 29px;
+    
+    padding-top: 5px;
+    
+    float: left;
+}
+
+.conteudoEsquecidos{
+    width: 340px;
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+    
+    margin-left: 230px;
+    
+    background-color: #b5e4ff;
+    
+    float: left;
+}
+
+.conteudoEsquecidos p{
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.imagemEsquecidos{
+    width: 260px;
+    height: 360px;
+    
+    margin-left: 40px;
+    margin-top: 5px;
+    
+    background-color: antiquewhite;
+    
+    float: left;
+}
+
+.imagemEsquecidos img{
+    width: 260px;
+    height: 360px;
+    
+    float: left;
+}
+
+#simboloMinnie{
+    width: 60px;
+    height: 60px;
+    
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#simboloMinnie img{
+    width: 60px;
+    height: 60px;
+}
+
+footer{
+    background-color: white;
+    width: 1400px;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1000px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter{
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #fa5fa7;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px #fca9d0;
+}
+
+.redes-sociais a {
+    color: deeppink;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+text-decoration: none;
+background: rgba(245, 66, 132, .9);
+bottom: 10px;
+right: 0px;
+color: #fff;
+text-align: center;
+cursor: pointer;
+padding: 5px;
+margin: 2px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+border-radius: 10px 10px 10px 10px;
+font-family: "Times new roman";
+opacity: 10;
+}
